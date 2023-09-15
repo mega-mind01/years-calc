@@ -1,4 +1,4 @@
-/* .container {
+.container {
     padding: 20px;
 }
 
@@ -30,57 +30,4 @@ button#check {
 
 h4 {
     color: #333;
-} */
-
-/* styles.css */
-
-/* Center-align text within the container */
-.text-center {
-    text-align: center;
-}
-
-/* Style headings */
-h1 {
-    color: #007bff;
-    font-size: 2rem;
-}
-
-h4 {
-    color: #333;
-    font-size: 1.25rem;
-    margin-top: 0.5rem;
-}
-
-/* Style paragraphs */
-p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-
-/* Style form labels */
-label {
-    font-weight: bold;
-}
-
-/* Style input fields */
-input[type="number"] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-}
-
-/* Style the button */
-button#check {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-/* Style the response paragraph */
-p#ageDisplay {
-    font-weight: bold;
-    margin-top: 10px;
 }

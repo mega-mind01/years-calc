@@ -52,3 +52,9 @@ button#check {
 h4 {
     color: #333;
 }
+
+p#ageDisplay{
+    border: solid black;
+    width: 500px;
+    padding: 10px;
+}

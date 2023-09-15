@@ -1,5 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    border: solid blue;
+    background-color: bisque;
+}
+
 .container {
     padding: 20px;
+}
+
+.banner{
+    background-image: url(images/johnny-cohen-OxOxqLAWvE0-unsplash\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 300px;
 }
 
 h1 {

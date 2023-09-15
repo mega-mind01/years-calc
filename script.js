@@ -11,13 +11,15 @@ function checker() {
 
     // year of interest in days
     const TARGET_YRS = 90 * 365;
+    const AVG_DAYS_IN_MONTH = 30.4;
+    const AVG_DAYS_IN_WEEK = 7;
 
-    if (isNaN(age_y) || isNaN(age_w) || isNaN(age_d)) {
+    if (isNaN(age_w) || isNaN(age_d)) {
         let age = 90 - age_y;
         age = age * 365;
-        let a_months = parseInt(age / 30.4);
-        let a_week = parseInt((age - (a_months * 30.4)) / 7);
-        let a_day = parseInt(age - (a_months * 30.4) - (a_week * 7));
+        let a_months = parseInt(age / AVG_DAYS_IN_MONTH);
+        let a_week = parseInt((age - (a_months * AVG_DAYS_IN_MONTH)) / AVG_DAYS_IN_WEEK);
+        let a_day = parseInt(age - (a_months * AVG_DAYS_IN_MONTH) - (a_week * AVG_DAYS_IN_WEEK));
         document.getElementById("ageDisplay").innerHTML = "You have " + a_months + " months, " + a_week + " weeks, and " + a_day + " days left until you turn 90 years old";
     } else {
         age_y = age_y * 365;
@@ -25,9 +27,9 @@ function checker() {
         let age_in_days = age_y + age_w + age_d;
         let days_left = TARGET_YRS - age_in_days;
 
-        let in_month = parseInt(days_left / 30.4);
-        let in_week = parseInt((days_left - (in_month * 30.4)) / 7);
-        let in_day = parseInt(days_left - (in_month * 30.4) - (in_week * 7));
+        let in_month = parseInt(days_left / AVG_DAYS_IN_MONTH);
+        let in_week = parseInt((days_left - (in_month * AVG_DAYS_IN_MONTH)) / AVG_DAYS_IN_WEEK);
+        let in_day = parseInt(days_left - (in_month * AVG_DAYS_IN_MONTH) - (in_week * AVG_DAYS_IN_WEEK));
 
         if (days_left < 0) {
             document.getElementById("ageDisplay").innerHTML = "Shey you dey whine me?";
